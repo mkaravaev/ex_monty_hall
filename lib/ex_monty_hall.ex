@@ -4,12 +4,10 @@ defmodule ExMontyHall do
   """
 
   def generate(times) when times > 0 do
-    IO.inspect(
-      %{
-        changing_door: do_generate(times, true),
-        not_changing_door: do_generate(times, false)
-      }
-    )
+    IO.inspect(%{
+      changing_door: do_generate(times, true),
+      not_changing_door: do_generate(times, false)
+    })
   end
 
   defp do_generate(times, switch_boolean) when is_boolean(switch_boolean) do
