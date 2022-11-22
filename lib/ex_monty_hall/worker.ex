@@ -8,7 +8,6 @@ defmodule ExMontyHall.Worker do
 
     left_doors = Enum.filter(doors, fn {key, val} -> !(key == d_key and val == d_val) end)
 
-
     result =
       if switch do
         Enum.flat_map(left_doors, fn {key, val} -> if val != pl_choice, do: [key], else: []; end)

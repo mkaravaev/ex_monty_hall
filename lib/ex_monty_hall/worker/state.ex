@@ -10,7 +10,7 @@ defmodule ExMontyHall.Worker.State do
   def new(switch) do
     %__MODULE__{
       doors: gen_doors(),
-      switch: switch,
+      switch: Keyword.get(switch, :need_switch, false),
       player_choice: Enum.random(0..2)
     }
   end
