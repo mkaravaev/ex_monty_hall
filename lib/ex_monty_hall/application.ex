@@ -6,10 +6,9 @@ defmodule ExMontyHall.Application do
   use Application
 
   @impl true
-  def start(_type, _args) do
+  def start(_type, args) do
     children = [
       # Starts a worker by calling: ExMontyHall.Worker.start_link(arg)
-      # {ExMontyHall.Worker, arg}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

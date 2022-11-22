@@ -3,16 +3,7 @@ defmodule ExMontyHall do
   Documentation for `ExMontyHall`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ExMontyHall.hello()
-      :world
-
-  """
-  def hello do
+  def generate  do
     :world
   end
 end
